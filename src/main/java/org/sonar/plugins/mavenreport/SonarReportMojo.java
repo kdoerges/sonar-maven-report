@@ -142,7 +142,7 @@ public class SonarReportMojo extends AbstractMavenReport {
 
   private String getProjectUrl() {
     StringBuilder sb = new StringBuilder(getSonarUrl())
-        .append("/project/index/")
+        .append("/dashboard?id=")
         .append(project.getGroupId())
         .append(":")
         .append(project.getArtifactId());
